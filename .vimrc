@@ -1,4 +1,5 @@
 set nocompatible "vi非互換モード
+set shortmess+=I "起動メッセージ非表示
 
 "#######################
 " 表示系
@@ -93,9 +94,7 @@ filetype plugin indent on     " Required!
 " Installation check.
 NeoBundleCheck
 
-NeoBundle 'Shougo/vimproc', { 'build' : {
-    \ 'cygwin' : 'make -f make_cygwin.mak',
-    \ 'mac' : 'make -f make_mac.mak',
-    \ 'unix' : 'make -f make_unix.mak',
-  \ },
-  \ }
+"NeoBundle 'Shougo/vimproc', { 'build' : {
+"    \ 'mac' : 'make -f make_mac.mak',
+"  \ },
+"\ }
