@@ -1,0 +1,2 @@
+2.0
+{'vimproc': {'checked_time': 1386178900, 'installed_uri': 'https://github.com/Shougo/vimproc.git', 'installed_path': '/Users/55p/.vim/bundle/vimproc', 'updated_time': '1386022424'}, 'neobundle.vim': {'checked_time': 1386178895, 'installed_uri': 'https://github.com/Shougo/neobundle.vim.git', 'installed_path': '/Users/55p/.vim/bundle/neobundle.vim', 'updated_time': 1386178895}, 'unite.vim': {'checked_time': 1386180254, 'installed_uri': 'https://github.com/Shougo/unite.vim.git', 'installed_path': '/Users/55p/.vim/bundle/unite.vim', 'updated_time': '1386065947'}}
