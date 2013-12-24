@@ -1,3 +1,4 @@
 neobundle.vim
+neocomplete.vim
 unite.vim
 vimproc
