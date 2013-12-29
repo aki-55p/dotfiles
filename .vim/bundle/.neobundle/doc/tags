@@ -1,3 +1,6 @@
+:Dash	dash.txt	/*:Dash*
+:DashKeywords	dash.txt	/*:DashKeywords*
+:DashSettings	dash.txt	/*:DashSettings*
 :NeoBundle	neobundle.txt	/*:NeoBundle*
 :NeoBundleCheck	neobundle.txt	/*:NeoBundleCheck*
 :NeoBundleClean	neobundle.txt	/*:NeoBundleClean*
@@ -80,7 +83,20 @@
 <Plug>(unite_toggle_mark_current_candidate)	unite.txt	/*<Plug>(unite_toggle_mark_current_candidate)*
 <Plug>(unite_toggle_mark_current_candidate_up)	unite.txt	/*<Plug>(unite_toggle_mark_current_candidate_up)*
 <Plug>(unite_toggle_transpose_window)	unite.txt	/*<Plug>(unite_toggle_transpose_window)*
+DashBugs	dash.txt	/*DashBugs*
+DashChangelog	dash.txt	/*DashChangelog*
+DashCommands	dash.txt	/*DashCommands*
+DashConfig	dash.txt	/*DashConfig*
+DashConfig_map	dash.txt	/*DashConfig_map*
+DashContents	dash.txt	/*DashContents*
+DashContributing	dash.txt	/*DashContributing*
+DashCredits	dash.txt	/*DashCredits*
+DashIntro	dash.txt	/*DashIntro*
+DashKeyBindings	dash.txt	/*DashKeyBindings*
+DashLicense	dash.txt	/*DashLicense*
+DashMappings	dash.txt	/*DashMappings*
 b:neocomplete_sources	neocomplete.txt	/*b:neocomplete_sources*
+dash.txt	dash.txt	/*dash.txt*
 g:neobundle#default_options	neobundle.txt	/*g:neobundle#default_options*
 g:neobundle#default_site	neobundle.txt	/*g:neobundle#default_site*
 g:neobundle#enable_name_conversion	neobundle.txt	/*g:neobundle#enable_name_conversion*

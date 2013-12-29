@@ -18,15 +18,18 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 
+"iTerm2 の256色モード反映
+set t_Co=256
+
 "#######################
 " プログラミングヘルプ系
 "#######################
 syntax on "カラー表示
 set smartindent "オートインデント
 
+"arduino syntax用
 au BufNewFile,BufRead *.pde setf arduino 
 au BufNewFile,BufRead *.ino setf arduino
-"arduino syntax用
 
 "#######################
 " 検索系
@@ -42,7 +45,7 @@ set nohlsearch "検索結果文字列の非ハイライト表示
 " 文字コード 
 "#######################
 set encoding=utf-8
-set fileencodings=iso-2022-jp,utf-8,euc-jp,sjis
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileencoding=utf-8
 set fileformats=unix,dos,mac
 
@@ -91,8 +94,11 @@ NeoBundle 'Shougo/vimproc'
 "
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'Shougo/unite.vim'
-
 NeoBundle "Shougo/neocomplete.vim"
+
+" Dash install
+NeoBundle 'rizzatti/funcoo.vim'
+NeoBundle 'rizzatti/dash.vim'
 
 " ...
 "
