@@ -16,12 +16,31 @@ setopt pushd_ignore_dups
 autoload -Uz colors
 colors
 
+# ディレクトリ名の入力のみで移動する 
+setopt auto_cd           
+
 #############################
 # プロンプトのスタイル 
 #############################
 
 # root 一般ユーザーとリモートログインで色変更
-# あとでやる
+# なんかおかしいからあとでやる
+# case ${UID} in
+#     0)
+#         PROMPT="%F{51}%/%%%f"
+#         PROMPT2="%B%{^[[31m%}%_#%{^[[m%}%b "
+#         SPROMPT="%B%{^[[31m%}%r is correct? [n,y,a,e]:%{^[[m%}%b "
+#         [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
+#         PROMPT="%{^[[37m%}${HOST%%.*} ${PROMPT}"
+#         ;;
+#     *)
+#         PROMPT="%{^[[31m%}%/%%%{^[[m%} "
+#         PROMPT2="%{^[[31m%}%_%%%{^[[m%} "
+#         SPROMPT="%{^[[31m%}%r is correct? [n,y,a,e]:%{^[[m%} "
+#         [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
+#         PROMPT="%{^[[37m%}${HOST%%.*} ${PROMPT}"
+#         ;;
+# esac
 
 # とりあえず設定
 PROMPT="%/%% "
