@@ -25,7 +25,10 @@ set t_Co=256
 " プログラミングヘルプ系
 "#######################
 syntax on "カラー表示
-set smartindent "オートインデント
+
+"オートインデント
+set autoindent
+set smartindent 
 
 "arduino syntax用
 au BufNewFile,BufRead *.pde setf arduino 
