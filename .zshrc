@@ -3,11 +3,6 @@
 # utf8 設定
 export LANG=ja_JP.UTF-8
 
-# プロンプトのスタイル
-PROMPT="%/%% "
-PROMPT2="%_%% "
-SPROMPT="%r is correct? [n,y,a,e]: "
-
 # 日本語ファイル名を表示可能にする
 setopt print_eight_bit
 
@@ -20,6 +15,18 @@ setopt pushd_ignore_dups
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
+
+#############################
+# プロンプトのスタイル 
+#############################
+
+# root 一般ユーザーとリモートログインで色変更
+# あとでやる
+
+# とりあえず設定
+PROMPT="%/%% "
+PROMPT2="%_%% "
+SPROMPT="%r is correct? [n,y,a,e]: "
 
 #############################
 # エイリアス
