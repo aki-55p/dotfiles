@@ -1,5 +1,9 @@
 # Created by newuser for 5.0.4
 
+#############################
+# オプション 
+#############################
+
 # utf8 設定
 export LANG=ja_JP.UTF-8
 
@@ -23,11 +27,11 @@ setopt auto_cd
 # プロンプトのスタイル 
 #############################
 
-# root 一般ユーザーとリモートログインで色変更
+# root と一般ユーザーとリモートログインで色変更
 # なんかおかしいからあとでやる
 # case ${UID} in
 #     0)
-#         PROMPT="%F{51}%/%%%f"
+#         PROMPT="%B%{^[[31m%}%/#%{^[[m%}%b "
 #         PROMPT2="%B%{^[[31m%}%_#%{^[[m%}%b "
 #         SPROMPT="%B%{^[[31m%}%r is correct? [n,y,a,e]:%{^[[m%}%b "
 #         [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
