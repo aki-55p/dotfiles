@@ -2576,6 +2576,7 @@ openable					*unite-action-openable*
 Defines an interface for files that can be opened.  It requires an inheriting
 kind to define "open" action.
 	tabopen		Open the file in a new tab.
+	choose		Open the file in a selected window.
 	tabdrop		Open the file by the ":tab drop" command.
 	split		Open the file, splitting horizontally.
 	vsplit		Open the file, splitting vertically.
@@ -2998,7 +2999,8 @@ description		String		(Optional)
 syntax			String		(Optional)
 			The syntax name used within the source.  This syntax
 			name is defined automatically by unite itself.
-			If it's omitted, it's set to "".
+			If it's omitted, it's set to
+			"uniteSource__(source name)".
 			This is used to configure the source's own highlight.
 			According to the unite's naming conversion to avoid
 			the syntax name conflicted, use syntax name like
@@ -3317,6 +3319,11 @@ filter			Function		(Required)
 					*unite-filter-attribute-description*
 description		String		(Optional)
 			The filter description string.
+
+						*unite-filter-attribute-pattern*
+pattern			Function		(Optional)
+			Returns highlight pattern for input.
+			Note: It is available only matchers.
 
 ==============================================================================
 EXTERNAL SOURCES				*unite-external-sources*
