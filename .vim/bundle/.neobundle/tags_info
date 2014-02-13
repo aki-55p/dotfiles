@@ -2,5 +2,6 @@ dash.vim
 funcoo.vim
 neobundle.vim
 neocomplete.vim
+surround.vim
 unite.vim
 vimproc
