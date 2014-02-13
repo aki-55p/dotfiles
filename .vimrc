@@ -98,6 +98,7 @@ NeoBundle 'Shougo/vimproc'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'Shougo/unite.vim'
 NeoBundle "Shougo/neocomplete.vim"
+NeoBundle 'vim-scripts/surround.vim'
 
 " Dash install
 NeoBundle 'rizzatti/funcoo.vim'

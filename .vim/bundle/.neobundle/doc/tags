@@ -96,7 +96,9 @@ DashKeyBindings	dash.txt	/*DashKeyBindings*
 DashLicense	dash.txt	/*DashLicense*
 DashMappings	dash.txt	/*DashMappings*
 b:neocomplete_sources	neocomplete.txt	/*b:neocomplete_sources*
+cs	surround.txt	/*cs*
 dash.txt	dash.txt	/*dash.txt*
+ds	surround.txt	/*ds*
 g:neobundle#default_options	neobundle.txt	/*g:neobundle#default_options*
 g:neobundle#default_site	neobundle.txt	/*g:neobundle#default_site*
 g:neobundle#enable_name_conversion	neobundle.txt	/*g:neobundle#enable_name_conversion*
@@ -283,6 +285,8 @@ i_<Plug>(unite_toggle_auto_preview)	unite.txt	/*i_<Plug>(unite_toggle_auto_previ
 i_<Plug>(unite_toggle_mark_current_candidate)	unite.txt	/*i_<Plug>(unite_toggle_mark_current_candidate)*
 i_<Plug>(unite_toggle_mark_current_candidate_up)	unite.txt	/*i_<Plug>(unite_toggle_mark_current_candidate_up)*
 i_<Plug>(unite_toggle_transpose_window)	unite.txt	/*i_<Plug>(unite_toggle_transpose_window)*
+i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
+i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 neobundle	neobundle.txt	/*neobundle*
 neobundle#call_hook()	neobundle.txt	/*neobundle#call_hook()*
 neobundle#config()	neobundle.txt	/*neobundle#config()*
@@ -437,6 +441,13 @@ neocomplete-unite-sources	neocomplete.txt	/*neocomplete-unite-sources*
 neocomplete-user-sources	neocomplete.txt	/*neocomplete-user-sources*
 neocomplete-variables	neocomplete.txt	/*neocomplete-variables*
 neocomplete.txt	neocomplete.txt	/*neocomplete.txt*
+surround	surround.txt	/*surround*
+surround-customizing	surround.txt	/*surround-customizing*
+surround-issues	surround.txt	/*surround-issues*
+surround-mappings	surround.txt	/*surround-mappings*
+surround-replacements	surround.txt	/*surround-replacements*
+surround-targets	surround.txt	/*surround-targets*
+surround.txt	surround.txt	/*surround.txt*
 unite	unite.txt	/*unite*
 unite#action#do_candidates()	unite.txt	/*unite#action#do_candidates()*
 unite#custom#action()	unite.txt	/*unite#custom#action()*
@@ -693,7 +704,9 @@ unite-variables	unite.txt	/*unite-variables*
 unite.txt	unite.txt	/*unite.txt*
 unite.vim	unite.txt	/*unite.vim*
 unite_default_key_mappings	unite.txt	/*unite_default_key_mappings*
+vS	surround.txt	/*vS*
 v_<Plug>(unite_toggle_selected_candidates)	unite.txt	/*v_<Plug>(unite_toggle_selected_candidates)*
+vgS	surround.txt	/*vgS*
 vimproc	vimproc.txt	/*vimproc*
 vimproc#cmd#system()	vimproc.txt	/*vimproc#cmd#system()*
 vimproc#delete_trash()	vimproc.txt	/*vimproc#delete_trash()*
@@ -733,3 +746,7 @@ vimproc-tips	vimproc.txt	/*vimproc-tips*
 vimproc-tips-pseudo-devices	vimproc.txt	/*vimproc-tips-pseudo-devices*
 vimproc-variables	vimproc.txt	/*vimproc-variables*
 vimproc.txt	vimproc.txt	/*vimproc.txt*
+yS	surround.txt	/*yS*
+ySS	surround.txt	/*ySS*
+ys	surround.txt	/*ys*
+yss	surround.txt	/*yss*
