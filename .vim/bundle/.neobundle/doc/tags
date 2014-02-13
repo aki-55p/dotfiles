@@ -4,11 +4,10 @@
 :NeoBundle	neobundle.txt	/*:NeoBundle*
 :NeoBundleCheck	neobundle.txt	/*:NeoBundleCheck*
 :NeoBundleClean	neobundle.txt	/*:NeoBundleClean*
-:NeoBundleDepends	neobundle.txt	/*:NeoBundleDepends*
-:NeoBundleDirectEdit	neobundle.txt	/*:NeoBundleDirectEdit*
 :NeoBundleDirectInstall	neobundle.txt	/*:NeoBundleDirectInstall*
 :NeoBundleDisable	neobundle.txt	/*:NeoBundleDisable*
 :NeoBundleDocs	neobundle.txt	/*:NeoBundleDocs*
+:NeoBundleEditExtra	neobundle.txt	/*:NeoBundleEditExtra*
 :NeoBundleFetch	neobundle.txt	/*:NeoBundleFetch*
 :NeoBundleInstall	neobundle.txt	/*:NeoBundleInstall*
 :NeoBundleInstall!	neobundle.txt	/*:NeoBundleInstall!*
@@ -143,7 +142,6 @@ g:neocomplete#manual_completion_start_length	neocomplete.txt	/*g:neocomplete#man
 g:neocomplete#max_keyword_width	neocomplete.txt	/*g:neocomplete#max_keyword_width*
 g:neocomplete#max_list	neocomplete.txt	/*g:neocomplete#max_list*
 g:neocomplete#min_keyword_length	neocomplete.txt	/*g:neocomplete#min_keyword_length*
-g:neocomplete#next_keyword_patterns	neocomplete.txt	/*g:neocomplete#next_keyword_patterns*
 g:neocomplete#release_cache_time	neocomplete.txt	/*g:neocomplete#release_cache_time*
 g:neocomplete#same_filetypes	neocomplete.txt	/*g:neocomplete#same_filetypes*
 g:neocomplete#skip_auto_completion_time	neocomplete.txt	/*g:neocomplete#skip_auto_completion_time*
@@ -179,9 +177,9 @@ g:unite_candidate_icon	unite.txt	/*g:unite_candidate_icon*
 g:unite_converter_file_directory_width	unite.txt	/*g:unite_converter_file_directory_width*
 g:unite_cursor_line_highlight	unite.txt	/*g:unite_cursor_line_highlight*
 g:unite_data_directory	unite.txt	/*g:unite_data_directory*
+g:unite_enable_short_source_names	unite.txt	/*g:unite_enable_short_source_names*
 g:unite_enable_split_vertically	unite.txt	/*g:unite_enable_split_vertically*
 g:unite_enable_start_insert	unite.txt	/*g:unite_enable_start_insert*
-g:unite_enable_use_short_source_names	unite.txt	/*g:unite_enable_use_short_source_names*
 g:unite_force_overwrite_statusline	unite.txt	/*g:unite_force_overwrite_statusline*
 g:unite_ignore_source_files	unite.txt	/*g:unite_ignore_source_files*
 g:unite_kind_cdable_cd_command	unite.txt	/*g:unite_kind_cdable_cd_command*
@@ -247,6 +245,7 @@ g:unite_split_rule	unite.txt	/*g:unite_split_rule*
 g:unite_update_time	unite.txt	/*g:unite_update_time*
 g:unite_winheight	unite.txt	/*g:unite_winheight*
 g:unite_winwidth	unite.txt	/*g:unite_winwidth*
+g:vimproc#disable	vimproc.txt	/*g:vimproc#disable*
 g:vimproc#dll_path	vimproc.txt	/*g:vimproc#dll_path*
 g:vimproc#password_pattern	vimproc.txt	/*g:vimproc#password_pattern*
 g:vimproc#popen2_commands	vimproc.txt	/*g:vimproc#popen2_commands*
@@ -316,6 +315,7 @@ neobundle-options-default	neobundle.txt	/*neobundle-options-default*
 neobundle-options-depends	neobundle.txt	/*neobundle-options-depends*
 neobundle-options-disabled	neobundle.txt	/*neobundle-options-disabled*
 neobundle-options-external_commands	neobundle.txt	/*neobundle-options-external_commands*
+neobundle-options-force	neobundle.txt	/*neobundle-options-force*
 neobundle-options-gui	neobundle.txt	/*neobundle-options-gui*
 neobundle-options-hooks	neobundle.txt	/*neobundle-options-hooks*
 neobundle-options-lazy	neobundle.txt	/*neobundle-options-lazy*
@@ -382,11 +382,14 @@ neocomplete-filter-converter_abbr	neocomplete.txt	/*neocomplete-filter-converter
 neocomplete-filter-converter_case	neocomplete.txt	/*neocomplete-filter-converter_case*
 neocomplete-filter-converter_default	neocomplete.txt	/*neocomplete-filter-converter_default*
 neocomplete-filter-converter_delimiter	neocomplete.txt	/*neocomplete-filter-converter_delimiter*
+neocomplete-filter-converter_disable_abbr	neocomplete.txt	/*neocomplete-filter-converter_disable_abbr*
 neocomplete-filter-converter_remove_last_paren	neocomplete.txt	/*neocomplete-filter-converter_remove_last_paren*
 neocomplete-filter-converter_remove_next_keyword	neocomplete.txt	/*neocomplete-filter-converter_remove_next_keyword*
+neocomplete-filter-converter_remove_overlap	neocomplete.txt	/*neocomplete-filter-converter_remove_overlap*
 neocomplete-filter-matcher_default	neocomplete.txt	/*neocomplete-filter-matcher_default*
 neocomplete-filter-matcher_fuzzy	neocomplete.txt	/*neocomplete-filter-matcher_fuzzy*
 neocomplete-filter-matcher_head	neocomplete.txt	/*neocomplete-filter-matcher_head*
+neocomplete-filter-matcher_length	neocomplete.txt	/*neocomplete-filter-matcher_length*
 neocomplete-filter-sorter_default	neocomplete.txt	/*neocomplete-filter-sorter_default*
 neocomplete-filter-sorter_length	neocomplete.txt	/*neocomplete-filter-sorter_length*
 neocomplete-filter-sorter_rank	neocomplete.txt	/*neocomplete-filter-sorter_rank*
@@ -498,7 +501,6 @@ unite-action-source-function	unite.txt	/*unite-action-source-function*
 unite-action-source-mapping	unite.txt	/*unite-action-source-mapping*
 unite-action-source-process	unite.txt	/*unite-action-source-process*
 unite-action-source-register	unite.txt	/*unite-action-source-register*
-unite-action-source-undo	unite.txt	/*unite-action-source-undo*
 unite-action-tab	unite.txt	/*unite-action-tab*
 unite-action-uri	unite.txt	/*unite-action-uri*
 unite-action-window	unite.txt	/*unite-action-window*
@@ -533,6 +535,7 @@ unite-filter-matcher_fuzzy	unite.txt	/*unite-filter-matcher_fuzzy*
 unite-filter-matcher_glob	unite.txt	/*unite-filter-matcher_glob*
 unite-filter-matcher_hide_hidden_files	unite.txt	/*unite-filter-matcher_hide_hidden_files*
 unite-filter-matcher_migemo	unite.txt	/*unite-filter-matcher_migemo*
+unite-filter-matcher_project_files	unite.txt	/*unite-filter-matcher_project_files*
 unite-filter-matcher_regexp	unite.txt	/*unite-filter-matcher_regexp*
 unite-filter-sorter_default	unite.txt	/*unite-filter-sorter_default*
 unite-filter-sorter_ftime	unite.txt	/*unite-filter-sorter_ftime*
@@ -619,6 +622,7 @@ unite-options-sync	unite.txt	/*unite-options-sync*
 unite-options-tab	unite.txt	/*unite-options-tab*
 unite-options-toggle	unite.txt	/*unite-options-toggle*
 unite-options-truncate	unite.txt	/*unite-options-truncate*
+unite-options-unique	unite.txt	/*unite-options-unique*
 unite-options-update-time	unite.txt	/*unite-options-update-time*
 unite-options-verbose	unite.txt	/*unite-options-verbose*
 unite-options-vertical	unite.txt	/*unite-options-vertical*
@@ -644,6 +648,7 @@ unite-source-attribute-hooks-on_post_filter	unite.txt	/*unite-source-attribute-h
 unite-source-attribute-hooks-on_pre_filter	unite.txt	/*unite-source-attribute-hooks-on_pre_filter*
 unite-source-attribute-hooks-on_pre_init	unite.txt	/*unite-source-attribute-hooks-on_pre_init*
 unite-source-attribute-hooks-on_syntax	unite.txt	/*unite-source-attribute-hooks-on_syntax*
+unite-source-attribute-is_grouped	unite.txt	/*unite-source-attribute-is_grouped*
 unite-source-attribute-is_listed	unite.txt	/*unite-source-attribute-is_listed*
 unite-source-attribute-is_volatile	unite.txt	/*unite-source-attribute-is_volatile*
 unite-source-attribute-matchers	unite.txt	/*unite-source-attribute-matchers*
@@ -682,9 +687,9 @@ unite-source-output	unite.txt	/*unite-source-output*
 unite-source-process	unite.txt	/*unite-source-process*
 unite-source-register	unite.txt	/*unite-source-register*
 unite-source-runtimepath	unite.txt	/*unite-source-runtimepath*
+unite-source-script	unite.txt	/*unite-source-script*
 unite-source-source	unite.txt	/*unite-source-source*
 unite-source-tab	unite.txt	/*unite-source-tab*
-unite-source-undo	unite.txt	/*unite-source-undo*
 unite-source-vimgrep	unite.txt	/*unite-source-vimgrep*
 unite-source-window	unite.txt	/*unite-source-window*
 unite-sources	unite.txt	/*unite-sources*
