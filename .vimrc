@@ -30,6 +30,9 @@ syntax on "カラー表示
 set autoindent
 set smartindent 
 
+" undo の回数
+set undolevels=1000
+
 "arduino syntax用
 au BufNewFile,BufRead *.pde setf processing
 au BufNewFile,BufRead *.ino setf arduino
