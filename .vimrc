@@ -31,7 +31,7 @@ set autoindent
 set smartindent 
 
 "arduino syntax用
-au BufNewFile,BufRead *.pde setf arduino 
+au BufNewFile,BufRead *.pde setf processing
 au BufNewFile,BufRead *.ino setf arduino
 
 "#######################
@@ -103,6 +103,9 @@ NeoBundle 'vim-scripts/surround.vim'
 " Dash install
 NeoBundle 'rizzatti/funcoo.vim'
 NeoBundle 'rizzatti/dash.vim'
+
+NeoBundle 'sophacles/vim-processing'
+NeoBundle 'sudar/vim-arduino-syntax'
 
 " ...
 "
