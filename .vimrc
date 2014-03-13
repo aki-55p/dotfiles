@@ -33,9 +33,6 @@ set smartindent
 " undo の回数
 set undolevels=1000
 
-"arduino syntax用
-au BufNewFile,BufRead *.pde setf processing
-au BufNewFile,BufRead *.ino setf arduino
 
 "#######################
 " 検索系
@@ -78,6 +75,10 @@ endif
 imap <C-j> <C-[>
 imap <C-k> <C-m>
 
+" クリップボードにヤンク
+set clipboard+=unnamed
+set clipboard+=autoselect
+
 "######################
 " NeoBundle 
 "######################
@@ -109,6 +110,9 @@ NeoBundle 'rizzatti/dash.vim'
 
 NeoBundle 'sophacles/vim-processing'
 NeoBundle 'sudar/vim-arduino-syntax'
+
+" cofee syntax + 自動compile
+NeoBundle 'kchmck/vim-coffee-script'
 
 " ...
 "
@@ -215,3 +219,17 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 " let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+
+"######################
+" filetype 設定 
+"######################
+"Processing syntax用
+au BufNewFile,BufRead *.pde setf processing
+"arduino syntax用
+au BufNewFile,BufRead *.ino setf arduino
+
+" vimにcoffeeファイルタイプを認識させる
+ au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
+" coffee 用インデントを設定
+ autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
