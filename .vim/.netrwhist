@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/55p/project/client/release/htdocs/shared/scripts'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/55p/include'
+let g:netrw_dirhist_2='/home/55p'
+let g:netrw_dirhist_3='/home'
+let g:netrw_dirhist_4='/'
