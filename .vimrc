@@ -14,8 +14,8 @@ set laststatus=2 "ステータスラインを常に表示
 "タブの代わりに空白文字を挿入する
 set smarttab
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set softtabstop=0
 
 "iTerm2 の256色モード反映
@@ -113,6 +113,9 @@ NeoBundle 'sudar/vim-arduino-syntax'
 
 " cofee syntax + 自動compile
 NeoBundle 'kchmck/vim-coffee-script'
+
+" editorconfig
+NeoBundle 'editorconfig/editorconfig-vim'
 
 " ...
 "
