@@ -5,10 +5,12 @@ My dotfiles
 
 Usage
 --------
+`$cd dotfiles/`
+
 `$ git submodule init`  
 `$ git submodule update`
 
-startvim && NeoBundleInstall(y)  
+start Vim && NeoBundleInstall (y)  
 
-`$ cd ,vim/bundle/vimproc`  
+`$ cd .vim/bundle/vimproc/`  
 `$ make`
