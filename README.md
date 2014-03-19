@@ -5,7 +5,7 @@ My dotfiles
 
 Usage
 --------
-`$cd dotfiles/`
+`$ cd dotfiles/`
 
 `$ git submodule init`  
 `$ git submodule update`
