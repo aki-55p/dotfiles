@@ -1,7 +1,8 @@
 .DS_Store
 .nerwhist
 
+bundle/**
 bundle/*
-!neobundle.vim
+!neobundle.vim/
 
 *.swp
