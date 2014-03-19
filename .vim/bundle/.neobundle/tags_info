@@ -1,0 +1,12 @@
+dash.vim
+editorconfig-vim
+funcoo.vim
+neobundle.vim
+neocomplete.vim
+surround.vim
+unite.vim
+vim-arduino-syntax
+vim-coffee-script
+vim-processing
+vim-slim
+vimproc
