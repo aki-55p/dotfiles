@@ -117,6 +117,8 @@ NeoBundle 'kchmck/vim-coffee-script'
 " editorconfig
 NeoBundle 'editorconfig/editorconfig-vim'
 
+" slim syntax
+NeoBundle 'slim-template/vim-slim'
 " ...
 "
 filetype plugin indent on     " Required!
