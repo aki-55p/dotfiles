@@ -119,6 +119,10 @@ NeoBundle 'editorconfig/editorconfig-vim'
 
 " slim syntax
 NeoBundle 'slim-template/vim-slim'
+
+" jade syntax
+NeoBundle 'digitaltoad/vim-jade'
+
 " ...
 "
 filetype plugin indent on     " Required!
