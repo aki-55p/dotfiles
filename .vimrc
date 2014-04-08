@@ -48,7 +48,7 @@ set nohlsearch "検索結果文字列の非ハイライト表示
 " 文字コード 
 "#######################
 set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 set fileencoding=utf-8
 set fileformats=unix,dos,mac
 
@@ -122,6 +122,9 @@ NeoBundle 'slim-template/vim-slim'
 
 " jade syntax
 NeoBundle 'digitaltoad/vim-jade'
+
+" JavaScript syntax
+NeoBundle 'jelera/vim-javascript-syntax'
 
 " ...
 "
@@ -242,3 +245,4 @@ au BufNewFile,BufRead *.ino setf arduino
  au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 " coffee 用インデントを設定
  autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
+
