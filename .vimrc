@@ -78,7 +78,8 @@ imap <C-k> <C-m>
 " クリップボードにヤンク
 set clipboard+=unnamed
 set clipboard+=autoselect
-
+" カーソル位置の単語をyank
+nnoremap vv vawy
 "######################
 " NeoBundle 
 "######################
@@ -242,7 +243,9 @@ au BufNewFile,BufRead *.pde setf processing
 au BufNewFile,BufRead *.ino setf arduino
 
 " vimにcoffeeファイルタイプを認識させる
- au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
+au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 " coffee 用インデントを設定
- autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
+autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
 
+" action script syntax highlight
+au BufNewFile,BufRead *.as setf actionscript
