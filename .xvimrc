@@ -1,0 +1,35 @@
+
+"タブの代わりに空白文字を挿入する
+set smarttab
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+
+"オートインデント
+set autoindent
+set smartindent 
+
+set ignorecase "検索文字列が小文字の場合は大文字小文字を区別なく検索する
+set smartcase "検索文字列に大文字が含まれている場合は区別して検索する
+set wrapscan "検索時に最後まで行ったら最初に戻る
+set noincsearch "検索文字列入力時に順次対象文字列にヒットさせない
+set nohlsearch "検索結果文字列の非ハイライト表示
+
+"カーソルを行頭，行末で止まらないようにする
+set whichwrap=b,s,h,l,<,>,[,]
+"BSで削除できるものを指定する
+" indent  : 行頭の空白
+" eol     : 改行
+" start   : 挿入モード開始位置より手前の文字
+set backspace=indent,eol,start
+
+" esc を C-j に、改行を C-k に
+imap <C-j> <C-[>
+imap <C-k> <C-m>
+
+" クリップボードにヤンク
+set clipboard+=unnamed
+set clipboard+=autoselect
+" カーソル位置の単語をyank
+nnoremap vv vawy
