@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/55p'
-let g:netrw_dirhist_2='/Users'
-let g:netrw_dirhist_3='/'
-let g:netrw_dirhist_4='/Users/55p/project/client/YSRC-Web/site/pc/source/partials'
-let g:netrw_dirhist_5='/Users/55p/project/client/ldcp/site/source/js/lunamessenger/template'
-let g:netrw_dirhist_6='/Users/55p/project/client/YSRC-Web/site/pc/source/css'
+let g:netrw_dirhist_cnt =0
