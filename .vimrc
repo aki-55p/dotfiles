@@ -101,8 +101,8 @@ nnoremap vv vawy
 let g:EasyMotion_do_mapping = 0
 
 " {char} 2個
-nmap z <Plug>(easymotion-s2)
-xmap z <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-s2)
+xmap t <Plug>(easymotion-s2)
 " 上下の移動がしやすい
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
