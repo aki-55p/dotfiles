@@ -85,6 +85,8 @@ endif
 " esc を C-j に、改行を C-k に
 imap <C-j> <C-[>
 imap <C-k> <C-m>
+vmap <C-j> <C-[>
+vmap <C-k> <C-m>
 
 " クリップボードにヤンク
 set clipboard+=unnamed
@@ -92,6 +94,20 @@ set clipboard+=autoselect
 " カーソル位置の単語をyank
 nnoremap vv vawy
 
+" vim-easy-motion setting
+let g:EasyMotion_do_mapping = 0
+
+nmap z <Plug>(easymotion-s2)
+xmap z <Plug>(easymotion-s2)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_use_upper = 1
+let g:EasyMotion_enter_jump_first = 1
+let g:EasyMotion_space_jump_first = 1
+nmap / <Plug>(easymotion-sn)
+xmap / <Plug>(easymotion-sn)
 
 "######################
 " NeoBundle 
@@ -117,6 +133,7 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle "Shougo/neocomplete.vim"
 NeoBundle 'vim-scripts/surround.vim'
+NeoBundle 'Lokaltog/vim-easymotion'
 
 " Dash install
 NeoBundle 'rizzatti/funcoo.vim'
