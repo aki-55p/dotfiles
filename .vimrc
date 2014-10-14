@@ -101,11 +101,12 @@ nnoremap vv vawy
 let g:EasyMotion_do_mapping = 0
 
 " {char} 2個
-nmap t <Plug>(easymotion-s2)
-xmap t <Plug>(easymotion-s2)
+nmap s <Plug>(easymotion-s2)
+xmap s <Plug>(easymotion-s2)
+
 " 上下の移動がしやすい
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
+noremap <Leader>j <Plug>(easymotion-j)
+noremap <Leader>k <Plug>(easymotion-k)
 
 " 小文字でも大文字でもマッチ(大文字で入れた時は大文字のみ)
 let g:EasyMotion_smartcase = 1
