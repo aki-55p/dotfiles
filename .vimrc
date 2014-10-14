@@ -1,6 +1,7 @@
 set nocompatible "vi非互換モード
 set shortmess+=I "起動メッセージ非表示
 
+
 "#######################
 " 表示系
 "#######################
@@ -28,6 +29,7 @@ let &t_EI.="\e[2 q"
 set ttimeoutlen=10
 " 挿入モードを抜けた時にカーソルが見えなくなる現象対策(なぜかこれで治る)
 inoremap <ESC> <ESC>
+
 
 "#######################
 " プログラミングヘルプ系
@@ -60,6 +62,7 @@ set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 set fileencoding=utf-8
 set fileformats=unix,dos,mac
 
+
 "######################
 " 操作系
 "######################
@@ -88,6 +91,8 @@ set clipboard+=unnamed
 set clipboard+=autoselect
 " カーソル位置の単語をyank
 nnoremap vv vawy
+
+
 "######################
 " NeoBundle 
 "######################
@@ -117,23 +122,16 @@ NeoBundle 'vim-scripts/surround.vim'
 NeoBundle 'rizzatti/funcoo.vim'
 NeoBundle 'rizzatti/dash.vim'
 
-NeoBundle 'sophacles/vim-processing'
-NeoBundle 'sudar/vim-arduino-syntax'
-
-" cofee syntax + 自動compile
-NeoBundle 'kchmck/vim-coffee-script'
-
 " editorconfig
 NeoBundle 'editorconfig/editorconfig-vim'
 
-" slim syntax
+" syntax
 NeoBundle 'slim-template/vim-slim'
-
-" jade syntax
 NeoBundle 'digitaltoad/vim-jade'
-
-" JavaScript syntax
 NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'sudar/vim-arduino-syntax'
+NeoBundle 'sophacles/vim-processing'
 
 " ...
 "
