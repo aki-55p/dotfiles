@@ -94,18 +94,27 @@ set clipboard+=autoselect
 " カーソル位置の単語をyank
 nnoremap vv vawy
 
+"######################
 " vim-easy-motion setting
+"######################
+" キーマップリセット
 let g:EasyMotion_do_mapping = 0
 
+" {char} 2個
 nmap z <Plug>(easymotion-s2)
 xmap z <Plug>(easymotion-s2)
+" 上下の移動がしやすい
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
+" 小文字でも大文字でもマッチ(大文字で入れた時は大文字のみ)
 let g:EasyMotion_smartcase = 1
+" マッチした時のアルファベット大文字使う(なんか効いてない？)
 let g:EasyMotion_use_upper = 1
+" space or <CR> で最初の候補に飛べる
 let g:EasyMotion_enter_jump_first = 1
 let g:EasyMotion_space_jump_first = 1
+" 通常検索をインクリメンタルハイライトに(そのままeasymotion での移動に移行)
 nmap / <Plug>(easymotion-sn)
 xmap / <Plug>(easymotion-sn)
 
