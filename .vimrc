@@ -100,7 +100,7 @@ nnoremap vv vawy
 " キーマップリセット
 let g:EasyMotion_do_mapping = 0
 
-" {char} 2個
+" easy-motion {char} 2個
 nmap s <Plug>(easymotion-s2)
 xmap s <Plug>(easymotion-s2)
 
@@ -118,6 +118,22 @@ let g:EasyMotion_space_jump_first = 1
 " 通常検索をインクリメンタルハイライトに(そのままeasymotion での移動に移行)
 nmap / <Plug>(easymotion-sn)
 xmap / <Plug>(easymotion-sn)
+
+"######################
+" Quick Run
+"######################
+let g:quickrun_config = get(g:, 'quickrun_config', {})
+
+" vimproc を使って非同期に実行し，結果を quickfix に出力する
+let g:quickrun_config._ = {
+            \ 'outputter' : 'quickfix',
+            \ 'runner' : 'vimproc'
+            \ }
+
+let g:quickrun_config.cpp = {
+            \ 'command' : 'clang++',
+            \ 'cmdopt' : '-std=c++1y -Wall -Wextra',
+            \ }
 
 "######################
 " NeoBundle 
@@ -151,6 +167,9 @@ NeoBundle 'rizzatti/dash.vim'
 
 " editorconfig
 NeoBundle 'editorconfig/editorconfig-vim'
+
+" run in vim
+NeoBundle 'thinca/vim-quickrun'
 
 " syntax
 NeoBundle 'slim-template/vim-slim'
