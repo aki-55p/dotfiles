@@ -23,12 +23,6 @@ colors
 # ディレクトリ名の入力のみで移動する 
 setopt auto_cd           
 
-# pyenv パス
-export PYENV_ROOT="${HOME}/.pyenv"
-if [ -d "${PYENV_ROOT}" ]; then
-    export PATH="${PYENV_ROOT}/bin:${PATH}"
-    eval "$(pyenv init -)"
-fi
 
 #############################
 # プロンプトのスタイル 
@@ -63,12 +57,24 @@ SPROMPT="%r is correct? [n,y,a,e]: "
 #############################
 alias la='ls -a'
 alias ll='ls -l'
+alias ls='ls -G'
  
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
  
 alias mkdir='mkdir -p'
+
+# pyenv パス
+export PYENV_ROOT="${HOME}/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+    export PATH="${PYENV_ROOT}/bin:${PATH}"
+    eval "$(pyenv init -)"
+fi
+
+alias brew="env PATH=${PATH/\/Users\/${USER}\/\.pyenv\/shims:/} brew"
+
+typeset -U path PATH
 
 #############################
 # 補完
