@@ -191,6 +191,7 @@ NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'sudar/vim-arduino-syntax'
 NeoBundle 'sophacles/vim-processing'
+NeoBundle 'toyamarinyon/vim-swift'
 
 " ...
 "
