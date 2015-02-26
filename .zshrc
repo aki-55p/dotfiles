@@ -65,15 +65,6 @@ alias mv='mv -i'
  
 alias mkdir='mkdir -p'
 
-# pyenv パス
-export PYENV_ROOT="${HOME}/.pyenv"
-if [ -d "${PYENV_ROOT}" ]; then
-    export PATH="${PYENV_ROOT}/bin:${PATH}"
-    eval "$(pyenv init -)"
-fi
-
-alias brew="env PATH=${PATH/\/Users\/${USER}\/\.pyenv\/shims:/} brew"
-
 typeset -U path PATH
 
 #############################
