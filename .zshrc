@@ -1,7 +1,7 @@
 # Created by newuser for 5.0.4
 
 #############################
-# オプション 
+# オプション
 #############################
 
 # utf8 設定
@@ -20,12 +20,12 @@ setopt pushd_ignore_dups
 autoload -Uz colors
 colors
 
-# ディレクトリ名の入力のみで移動する 
-setopt auto_cd           
+# ディレクトリ名の入力のみで移動する
+setopt auto_cd
 
 
 #############################
-# プロンプトのスタイル 
+# プロンプトのスタイル
 #############################
 
 # root と一般ユーザーとリモートログインで色変更
@@ -35,14 +35,14 @@ setopt auto_cd
 #         PROMPT="%B%{^[[31m%}%/#%{^[[m%}%b "
 #         PROMPT2="%B%{^[[31m%}%_#%{^[[m%}%b "
 #         SPROMPT="%B%{^[[31m%}%r is correct? [n,y,a,e]:%{^[[m%}%b "
-#         [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
+#         [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
 #         PROMPT="%{^[[37m%}${HOST%%.*} ${PROMPT}"
 #         ;;
 #     *)
 #         PROMPT="%{^[[31m%}%/%%%{^[[m%} "
 #         PROMPT2="%{^[[31m%}%_%%%{^[[m%} "
 #         SPROMPT="%{^[[31m%}%r is correct? [n,y,a,e]:%{^[[m%} "
-#         [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && 
+#         [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
 #         PROMPT="%{^[[37m%}${HOST%%.*} ${PROMPT}"
 #         ;;
 # esac
@@ -58,14 +58,16 @@ SPROMPT="%r is correct? [n,y,a,e]: "
 alias la='ls -a'
 alias ll='ls -l'
 alias ls='ls -G'
- 
+
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
- 
+
 alias mkdir='mkdir -p'
 
 typeset -U path PATH
+
+alias brew="env PATH=${PATH#\/Users\/${USER}\/\.pyenv\/shims:} brew"
 
 #############################
 # 補完
@@ -90,16 +92,16 @@ setopt share_history
 
 # 同じコマンドをヒストリに残さない
 setopt hist_ignore_all_dups
- 
+
 # ヒストリファイルに保存するとき、すでに重複したコマンドがあったら古い方を削除する
 setopt hist_save_nodups
- 
+
 # スペースから始まるコマンド行はヒストリに残さない
 setopt hist_ignore_space
- 
+
 # ヒストリに保存するときに余分なスペースを削除する
 setopt hist_reduce_blanks
- 
+
 # 補完候補が複数あるときに自動的に一覧表示する
 setopt auto_menu
 
@@ -162,7 +164,7 @@ if is-at-least 4.3.10; then
     zstyle ':vcs_info:git:*' stagedstr "+"    # %c で表示する文字列
     zstyle ':vcs_info:git:*' unstagedstr "-"  # %u で表示する文字列
 fi
-        
+
 # hooks 設定
 if is-at-least 4.3.11; then
     # git のときはフック関数を設定する

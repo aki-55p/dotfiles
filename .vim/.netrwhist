@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/55p/Desktop/sp-test/src/js/modules'
 let g:netrw_dirhist_2='/Users/55p/project/_sample/module/gulp'
 let g:netrw_dirhist_3='/Users/55p/project/client/fove/site/source/localizable'
 let g:netrw_dirhist_4='/Users/55p/project/client/lokitho/src/pages'
 let g:netrw_dirhist_5='/Users/55p/project/client/lokitho/gulp'
+let g:netrw_dirhist_6='/Users/55p/project/client/artbrut/site/source/css'
+let g:netrw_dirhist_7='/Users/55p/project/55p/empty/bower_components'
+let g:netrw_dirhist_8='/Users/55p/project/client/shotoku/.git'
+let g:netrw_dirhist_9='/Users/55p/project/client/YSRC-Web/site/pc/source/partials'

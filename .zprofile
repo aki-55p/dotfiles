@@ -14,13 +14,12 @@ export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 #export PATH=/usr/local/opt/ruby/bin:$PATH
 
+#bundler
+export PATH=./vendor/bin:$PATH
+
 # pyenv
 export PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH="${PYENV_ROOT}/bin:${PATH}"
     eval "$(pyenv init -)"
 fi
-
-alias brew="env PATH=${PATH/\/Users\/${USER}\/\.pyenv\/shims:/} brew"
-
-
