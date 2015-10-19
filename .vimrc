@@ -30,10 +30,11 @@ set ttimeoutlen=10
 " 挿入モードを抜けた時にカーソルが見えなくなる現象対策(なぜかこれで治る)
 inoremap <ESC> <ESC>
 
-" vim indent guide
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=188
+" vim indent guides
+colorscheme default " なんか指定しないと怒られる
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=252
 
 
 "#######################
@@ -111,6 +112,11 @@ augroup BinaryXXD
   autocmd BufWritePost * if &binary | silent %!xxd -g 1
   autocmd BufWritePost * set nomod | endif
 augroup END
+
+"######################
+" syntastic config
+"######################
+let g:syntastic_javascript_checkers = ['eslint']
 
 "######################
 " vim-easy-motion setting
@@ -191,6 +197,9 @@ NeoBundle 'thinca/vim-quickrun'
 
 " indent guide
 NeoBundle 'nathanaelkane/vim-indent-guides'
+
+" syntastic
+NeoBundle 'scrooloose/syntastic.git'
 
 " syntax
 NeoBundle 'slim-template/vim-slim'

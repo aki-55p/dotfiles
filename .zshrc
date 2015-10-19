@@ -65,9 +65,20 @@ alias mv='mv -i'
 
 alias mkdir='mkdir -p'
 
+alias mm='middleman'
+alias mmb='middleman build'
+
+alias less='less -N'
+
 typeset -U path PATH
 
 alias brew="env PATH=${PATH#\/Users\/${USER}\/\.pyenv\/shims:} brew"
+
+#############################
+# direnv 設定
+#############################
+export EDITOR=vim 
+echo 'eval "$(direnv hook zsh)"'
 
 #############################
 # 補完
