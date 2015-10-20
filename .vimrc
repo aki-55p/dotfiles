@@ -202,6 +202,9 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/syntastic.git'
 
 " syntax
+NeoBundle 'rking/ag.vim'
+
+" syntax
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'jelera/vim-javascript-syntax'
