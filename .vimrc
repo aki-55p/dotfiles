@@ -1,7 +1,6 @@
 set nocompatible "vi非互換モード
 set shortmess+=I "起動メッセージ非表示
 
-
 "#######################
 " 表示系
 "#######################
@@ -25,6 +24,7 @@ set t_Co=256
 " 挿入モードでカーソル形状を変更する
 let &t_SI.="\e[6 q"
 let &t_EI.="\e[2 q"
+
 " カーソル形状がすぐに元に戻らないのでタイムアウト時間を調整
 set ttimeoutlen=10
 " 挿入モードを抜けた時にカーソルが見えなくなる現象対策(なぜかこれで治る)
@@ -124,24 +124,29 @@ let g:syntastic_javascript_checkers = ['eslint']
 " キーマップリセット
 let g:EasyMotion_do_mapping = 0
 
+" 上下の移動がしやすい
+"noremap <Leader>j <Plug>(easymotion-j)
+"noremap <Leader>k <Plug>(easymotion-k)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
 " easy-motion {char} 2個
 nmap s <Plug>(easymotion-s2)
 xmap s <Plug>(easymotion-s2)
 
-" 上下の移動がしやすい
-noremap <Leader>j <Plug>(easymotion-j)
-noremap <Leader>k <Plug>(easymotion-k)
+" 複数keyでFind Motion
+nmap g/ <Plug>(easymotion-sn)
+xmap g/ <Plug>(easymotion-sn)
 
 " 小文字でも大文字でもマッチ(大文字で入れた時は大文字のみ)
 let g:EasyMotion_smartcase = 1
+
 " マッチした時のアルファベット大文字使う(なんか効いてない？)
 let g:EasyMotion_use_upper = 1
+
 " space or <CR> で最初の候補に飛べる
 let g:EasyMotion_enter_jump_first = 1
 let g:EasyMotion_space_jump_first = 1
-" 通常検索をインクリメンタルハイライトに(そのままeasymotion での移動に移行)
-nmap / <Plug>(easymotion-sn)
-xmap / <Plug>(easymotion-sn)
 
 "######################
 " Quick Run

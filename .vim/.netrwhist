@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/55p/.pyenv/versions/pyDmx/lib/python2.7/site-packages/pkg_resources'
 let g:netrw_dirhist_2='/Users/55p/project/client/ldcp/site/.bundle'
 let g:netrw_dirhist_3='/Users/55p/Desktop/dmx_test'
 let g:netrw_dirhist_4='/private/var/log'
 let g:netrw_dirhist_5='/Users/55p/project/client/pv/lokitho/.bundle'
 let g:netrw_dirhist_6='/Users/55p/project/client/aus/shutter/.git'
+let g:netrw_dirhist_7='/Users/55p/project/sample/push_state/source/js'
