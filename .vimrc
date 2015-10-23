@@ -206,6 +206,9 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 " syntastic
 NeoBundle 'scrooloose/syntastic.git'
 
+" wakatime
+NeoBundle 'wakatime/vim-wakatime'
+
 " syntax
 NeoBundle 'rking/ag.vim'
 
