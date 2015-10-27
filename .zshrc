@@ -74,6 +74,8 @@ typeset -U path PATH
 
 alias brew="env PATH=${PATH#\/Users\/${USER}\/\.pyenv\/shims:} brew"
 
+alias ss='superstatic'
+
 #############################
 # direnv 設定
 #############################
