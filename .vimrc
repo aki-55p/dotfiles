@@ -203,14 +203,14 @@ NeoBundle 'thinca/vim-quickrun'
 " indent guide
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
-" syntastic
-NeoBundle 'scrooloose/syntastic.git'
-
 " wakatime
 NeoBundle 'wakatime/vim-wakatime'
 
 " the_silver_searcher
 NeoBundle 'rking/ag.vim'
+
+" syntastic
+NeoBundle 'scrooloose/syntastic.git'
 
 " syntax
 NeoBundle 'slim-template/vim-slim'
@@ -222,6 +222,7 @@ NeoBundle 'sophacles/vim-processing'
 NeoBundle 'toyamarinyon/vim-swift'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'clausreinke/typescript-tools.git'
+NeoBundle 'elixir-lang/vim-elixir'
 
 call neobundle#end()
 
