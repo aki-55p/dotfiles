@@ -203,11 +203,11 @@ NeoBundle 'thinca/vim-quickrun'
 " indent guide
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
-" wakatime
-NeoBundle 'wakatime/vim-wakatime'
-
 " the_silver_searcher
 NeoBundle 'rking/ag.vim'
+
+" wakatime
+NeoBundle 'wakatime/vim-wakatime'
 
 " syntastic
 NeoBundle 'scrooloose/syntastic.git'
