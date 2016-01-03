@@ -221,7 +221,8 @@ NeoBundle 'sudar/vim-arduino-syntax'
 NeoBundle 'sophacles/vim-processing'
 NeoBundle 'toyamarinyon/vim-swift'
 NeoBundle 'leafgarland/typescript-vim'
-NeoBundle 'clausreinke/typescript-tools.git'
+" depricated version て出たから削除
+"NeoBundle 'clausreinke/typescript-tools.git'
 NeoBundle 'elixir-lang/vim-elixir'
 
 call neobundle#end()
