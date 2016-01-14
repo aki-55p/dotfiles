@@ -117,6 +117,8 @@ augroup END
 " syntastic config
 "######################
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_typescript_checkers = ['tsc']
+let g:syntastic_coffee_checkers = ['coffeelint']
 
 "######################
 " vim-easy-motion setting

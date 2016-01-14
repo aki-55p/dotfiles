@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/55p/project/client/SS/odyssey/site/data'
 let g:netrw_dirhist_2='/Users/55p/project/client/SS/odyssey/site'
 let g:netrw_dirhist_3='/Users/55p/project/client/SS/odyssey/site/data'
 let g:netrw_dirhist_4='/Users/55p/project/client/SS/odyssey/site/source/alternative'
 let g:netrw_dirhist_5='/Users/55p/project/client/SS/odyssey/site/source/awards'
+let g:netrw_dirhist_6='/Users/55p/project/client/SS/odyssey/site/source/movie'
