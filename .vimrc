@@ -217,14 +217,15 @@ NeoBundle 'scrooloose/syntastic.git'
 " syntax
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'digitaltoad/vim-jade'
+
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'leafgarland/typescript-vim'
+
 NeoBundle 'sudar/vim-arduino-syntax'
 NeoBundle 'sophacles/vim-processing'
+
 NeoBundle 'toyamarinyon/vim-swift'
-NeoBundle 'leafgarland/typescript-vim'
-" depricated version て出たから削除
-"NeoBundle 'clausreinke/typescript-tools.git'
 NeoBundle 'elixir-lang/vim-elixir'
 
 call neobundle#end()
