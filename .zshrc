@@ -73,8 +73,9 @@ alias less='less -N'
 typeset -U path PATH
 
 alias brew="env PATH=${PATH#\/Users\/${USER}\/\.pyenv\/shims:} brew"
-
 alias ss='superstatic'
+alias wttr='curl http://wttr.in/tokyo'
+
 
 #############################
 # direnv 設定
