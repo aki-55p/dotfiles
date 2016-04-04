@@ -167,86 +167,67 @@ let g:quickrun_config.cpp = {
             \ }
 
 "######################
-" NeoBundle 
+" dein
 "######################
-filetype off
 
-if has('vim_starting')
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible
 endif
+set runtimepath^=~/dotfiles/.vim/dein/repos/github.com/Shougo/dein.vim
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+call dein#begin(expand('~/dotfiles/.vim/dein'))
 
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Recommended to install
-" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc'
+call dein#add('Shougo/dein.vim')
+call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 
 " My Bundles here:
 "
 " Note: You don't set neobundle setting in .gvimrc!
-NeoBundle 'Shougo/unite.vim'
-NeoBundle "Shougo/neocomplete.vim"
-NeoBundle 'vim-scripts/surround.vim'
-NeoBundle 'Lokaltog/vim-easymotion'
+call dein#add('shougo/unite.vim')
+call dein#add('shougo/neocomplete.vim')
+call dein#add('vim-scripts/surround.vim')
+call dein#add('Lokaltog/vim-easymotion')
 
 " Dash install
-NeoBundle 'rizzatti/funcoo.vim'
-NeoBundle 'rizzatti/dash.vim'
+call dein#add('rizzatti/funcoo.vim')
+call dein#add('rizzatti/dash.vim')
 
 " editorconfig
-NeoBundle 'editorconfig/editorconfig-vim'
+call dein#add('editorconfig/editorconfig-vim')
 
 " run in vim
-NeoBundle 'thinca/vim-quickrun'
+call dein#add('thinca/vim-quickrun')
 
 " indent guide
-NeoBundle 'nathanaelkane/vim-indent-guides'
+call dein#add('nathanaelkane/vim-indent-guides')
 
 " the_silver_searcher
-NeoBundle 'rking/ag.vim'
+call dein#add('rking/ag.vim')
 
 " wakatime
-NeoBundle 'wakatime/vim-wakatime'
+call dein#add('wakatime/vim-wakatime')
 
 " syntastic
-NeoBundle 'scrooloose/syntastic.git'
+call dein#add('scrooloose/syntastic.git')
 
 " syntax
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'digitaltoad/vim-jade'
+call dein#add('slim-template/vim-slim')
+call dein#add('digitaltoad/vim-jade')
+call dein#add('jelera/vim-javascript-syntax')
+call dein#add('kchmck/vim-coffee-script')
+call dein#add('leafgarland/typescript-vim')
+call dein#add('sudar/vim-arduino-syntax')
+call dein#add('sophacles/vim-processing')
+call dein#add('toyamarinyon/vim-swift')
+call dein#add('elixir-lang/vim-elixir')
 
-NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'leafgarland/typescript-vim'
+call dein#end()
 
-NeoBundle 'sudar/vim-arduino-syntax'
-NeoBundle 'sophacles/vim-processing'
-
-NeoBundle 'toyamarinyon/vim-swift'
-NeoBundle 'elixir-lang/vim-elixir'
-
-call neobundle#end()
-
-" ...
-"
 filetype plugin indent on     " Required!
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
-" Installation check.
-NeoBundleCheck
-
-" vimproc 自動ビルド
-"NeoBundle 'Shougo/vimproc', { 'build' : {
-"    \ 'mac' : 'make -f make_mac.mak',
-"  \ },
-"\ }
+if dein#check_install()
+  call dein#install()
+endif
 
 "######################
 " NeoComplete 
