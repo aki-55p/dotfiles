@@ -10,6 +10,6 @@ bundle/*
 !/.vim/dein/repos/github.com/Shougo/dein.vim
 
 /tmp01
-!/tmp01/tmp02/*
+!/tmp01/tmp02/hoge.02.txt
 
 *.swp
