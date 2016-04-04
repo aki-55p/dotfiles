@@ -5,12 +5,4 @@ My dotfiles
 
 Usage
 --------
-`$ cd dotfiles/`
-
-`$ git submodule init`  
-`$ git submodule update`
-
-start Vim && NeoBundleInstall (y)  
-
-`$ cd .vim/bundle/vimproc/`  
-`$ make`
+add dein to `/.vim/dein/repos/github.com/Shougo/dein.vim`
