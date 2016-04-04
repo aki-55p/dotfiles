@@ -9,7 +9,7 @@ bundle/*
 /.vim/dein
 !/.vim/dein/repos/github.com/Shougo/dein.vim
 
-/tmp01
-!/tmp01/tmp02/hoge02.txt
+/tmp01/
+!/tmp01/tmp02/
 
 *.swp
