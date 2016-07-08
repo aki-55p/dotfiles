@@ -84,6 +84,10 @@ alias zen='curl https://api.github.com/zen'
 export EDITOR=vim 
 echo 'eval "$(direnv hook zsh)"'
 
+# 子プロセスのキーバインドが勝手におかしくなるので emacs モードに指定
+# 参考 http://web-salad.hateblo.jp/entry/2014/12/07/090000
+bindkey -e
+
 #############################
 # 補完
 #############################

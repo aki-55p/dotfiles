@@ -117,7 +117,7 @@ augroup END
 " syntastic config
 "######################
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_typescript_checkers = ['tsc']
+let g:syntastic_typescript_checkers = ['tslint']
 let g:syntastic_coffee_checkers = ['coffeelint']
 
 "######################
@@ -173,6 +173,7 @@ let g:quickrun_config.cpp = {
 if &compatible
   set nocompatible
 endif
+
 set runtimepath^=~/dotfiles/.vim/dein/repos/github.com/Shougo/dein.vim
 
 call dein#begin(expand('~/dotfiles/.vim/dein'))
