@@ -17,6 +17,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=0
+set breakindent
 
 "iTerm2 の256色モード反映
 set t_Co=256
@@ -221,6 +222,8 @@ call dein#add('sudar/vim-arduino-syntax')
 call dein#add('sophacles/vim-processing')
 call dein#add('toyamarinyon/vim-swift')
 call dein#add('elixir-lang/vim-elixir')
+call dein#add('tikhomirov/vim-glsl')
+call dein#add('wavded/vim-stylus')
 
 call dein#end()
 

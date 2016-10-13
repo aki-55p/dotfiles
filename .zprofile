@@ -21,3 +21,9 @@ if [ -d "${PYENV_ROOT}" ]; then
     export PATH=${PYENV_ROOT}/bin:${PATH}
     eval "$(pyenv init -)"
 fi
+
+# rebar3
+export PATH=$PATH:~/.cache/rebar3/bin
+
+# android studio
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
