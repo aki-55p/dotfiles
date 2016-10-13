@@ -1,18 +1,46 @@
-.DS_Store
+### my ignore
+.vim/
+
+
+### https://raw.github.com/github/gitignore/dad599102e7097c796b794689606874983a77dc1/Global/Vim.gitignore
+
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
 .netrwhist
+*~
+# auto-generated tag files
+tags
 
-bundle/
-bundle/**
-bundle/*
-!neobundle.vim/
 
-/.vim/dein/*
-!/.vim/dein/repos
-/.vim/dein/repos/*
-!/.vim/dein/repos/github.com
-/.vim/dein/repos/github.com/*
-!/.vim/dein/repos/github.com/Shougo
-/.vim/dein/repos/github.com/Shougo/*
-!/.vim/dein/repos/github.com/Shougo/dein.vim
+### https://raw.github.com/github/gitignore/dad599102e7097c796b794689606874983a77dc1/Global/OSX.gitignore
 
-*.swp
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
