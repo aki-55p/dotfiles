@@ -50,6 +50,15 @@ set smartindent
 " undo の回数
 set undolevels=1000
 
+" カッコ自動補完
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<ESC>i
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+
+" クォーテーション自動補完
+inoremap ' ''<Left>
+inoremap " ""<Left>
 
 "#######################
 " 検索系
@@ -183,8 +192,6 @@ call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 
 " My Bundles here:
-"
-" Note: You don't set neobundle setting in .gvimrc!
 call dein#add('shougo/unite.vim')
 call dein#add('shougo/neocomplete.vim')
 call dein#add('vim-scripts/surround.vim')
@@ -337,3 +344,7 @@ autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
 
 " action script syntax highlight
 au BufNewFile,BufRead *.as setf actionscript
+"
+" typescript
+autocmd BufNewFile,BufRead *.ts     set filetype=typescript
+autocmd BufNewFile,BufRead *.tsx    set filetype=typescript
