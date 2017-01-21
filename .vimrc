@@ -98,11 +98,27 @@ if has("autocmd")
         \ endif
 endif
 
+" qwerty
 " esc を C-j に、改行を C-k に
-imap <C-j> <C-[>
-imap <C-k> <C-m>
-vmap <C-j> <C-[>
-vmap <C-k> <C-m>
+" inoremap <C-j> <C-[>
+" inoremap <C-k> <C-m>
+" vnoremap <C-j> <C-[>
+" vnoremap <C-k> <C-m>
+
+" dvorak
+" カーソルの移動と insert 抜けるのだけ qwerty とおんなじ指の位置に
+inoremap <C-h> <C-[>
+vnoremap <C-h> <C-[>
+
+noremap h j
+noremap t k
+noremap d h
+noremap s l
+vnoremap h j
+vnoremap t k
+vnoremap d h
+vnoremap s l
+
 
 " クリップボードにヤンク
 set clipboard+=unnamed
@@ -231,6 +247,7 @@ call dein#add('toyamarinyon/vim-swift')
 call dein#add('elixir-lang/vim-elixir')
 call dein#add('tikhomirov/vim-glsl')
 call dein#add('wavded/vim-stylus')
+call dein#add('mxw/vim-jsx')
 
 call dein#end()
 
