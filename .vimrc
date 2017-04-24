@@ -39,6 +39,22 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=252
 
 
 "#######################
+" status line
+"#######################
+set statusline=%F  " ファイル名表示
+set statusline+=%m " 変更チェック表示
+set statusline+=%r " 読み込み専用かどうか表示
+set statusline+=%h " ヘルプページなら[HELP]と表示
+set statusline+=%= " これ以降は右寄せ表示
+set statusline+=%{ALEGetStatusLine()} " ALE のエラーとワーニング数
+set statusline+=%y " ファイルタイプ
+set statusline+=[ENC=%{&fileencoding}] " file encoding
+set statusline+=[LOW=%l/%L] " 現在行数/全行数
+set laststatus=2 " ステータスラインを常に表示(0:表示しない、1:2つ以上ウィンドウがある時だけ表示)
+
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok'] " ALE のエラー表示フォーマット
+
+"#######################
 " プログラミングヘルプ系
 "#######################
 syntax on "カラー表示
@@ -130,13 +146,6 @@ augroup BinaryXXD
 augroup END
 
 "######################
-" syntastic config
-"######################
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_typescript_checkers = ['tslint']
-let g:syntastic_coffee_checkers = ['coffeelint']
-
-"######################
 " vim-easy-motion setting
 "######################
 " キーマップリセット
@@ -223,7 +232,7 @@ call dein#add('rking/ag.vim')
 call dein#add('wakatime/vim-wakatime')
 
 " syntastic
-call dein#add('scrooloose/syntastic.git')
+call dein#add('w0rp/ale')
 
 " syntax
 call dein#add('slim-template/vim-slim')
