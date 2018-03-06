@@ -11,8 +11,7 @@ set ruler "ルーラーの表示
 set showcmd "入力中のコマンドをステータスに表示する
 set showmatch "括弧入力時の対応する括弧を表示
 set laststatus=2 "ステータスラインを常に表示
-"タブの代わりに空白文字を挿入する
-set smarttab
+set smarttab "タブの代わりに空白文字を挿入する
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -132,6 +131,11 @@ set clipboard+=autoselect
 " カーソル位置の単語をyank
 nnoremap vv vawy
 
+" Unite.vim 起動コマンド
+nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
+nnoremap <silent> ,uf :<C-u>Unite file<CR>
+nnoremap <silent> ,uu :<C-u>Unite file_mru<CR>
+
 "######################
 " binary mode at once when add -b
 "######################
@@ -208,6 +212,7 @@ call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 
 " My Bundles here:
 call dein#add('shougo/unite.vim')
+call dein#add('Shougo/neomru.vim')
 call dein#add('shougo/neocomplete.vim')
 call dein#add('vim-scripts/surround.vim')
 call dein#add('Lokaltog/vim-easymotion')
@@ -230,6 +235,9 @@ call dein#add('rking/ag.vim')
 
 " wakatime
 call dein#add('wakatime/vim-wakatime')
+
+" PostCSS
+call dein#add('stephenway/postcss.vim')
 
 " syntastic
 call dein#add('w0rp/ale')

@@ -1,4 +1,3 @@
-
 "タブの代わりに空白文字を挿入する
 set smarttab
 set expandtab
@@ -28,8 +27,22 @@ set backspace=indent,eol,start
 imap <C-j> <C-[>
 imap <C-k> <C-m>
 
+" dvorak
+" insert 抜けるのだけ追加
+inoremap <C-c> <C-[>
+vnoremap <C-c> <C-[>
+
 " クリップボードにヤンク
 set clipboard+=unnamed
 set clipboard+=autoselect
 " カーソル位置の単語をyank
 nnoremap vv vawy
+
+" 挿入モードでカーソル形状を変更する
+let &t_SI.="\e[6 q"
+let &t_EI.="\e[2 q"
+
+" カーソル形状がすぐに元に戻らないのでタイムアウト時間を調整
+set ttimeoutlen=10
+" 挿入モードを抜けた時にカーソルが見えなくなる現象対策(なぜかこれで治る)
+inoremap <ESC> <ESC>
