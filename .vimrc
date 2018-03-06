@@ -135,6 +135,7 @@ nnoremap vv vawy
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>Unite file<CR>
 nnoremap <silent> ,uu :<C-u>Unite file_mru<CR>
+let g:unite_enable_start_insert=1
 
 " Unite grep
 " 大文字小文字を区別しない
