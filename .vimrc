@@ -275,6 +275,7 @@ call dein#add('elixir-lang/vim-elixir')
 call dein#add('tikhomirov/vim-glsl')
 call dein#add('wavded/vim-stylus')
 call dein#add('mxw/vim-jsx')
+call dein#add('posva/vim-vue')
 
 call dein#end()
 
