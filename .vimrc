@@ -13,7 +13,7 @@ set showmatch "括弧入力時の対応する括弧を表示
 set laststatus=2 "ステータスラインを常に表示
 set smarttab "タブの代わりに空白文字を挿入する
 set expandtab
-set tabstop=2
+
 set shiftwidth=2
 set softtabstop=0
 set breakindent
@@ -36,6 +36,21 @@ let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_auto_colors=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=252
 
+"#######################
+" ale custum function for status line
+"#######################
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
 
 "#######################
 " status line
@@ -45,7 +60,7 @@ set statusline+=%m " 変更チェック表示
 set statusline+=%r " 読み込み専用かどうか表示
 set statusline+=%h " ヘルプページなら[HELP]と表示
 set statusline+=%= " これ以降は右寄せ表示
-set statusline+=%{ALEGetStatusLine()} " ALE のエラーとワーニング数
+set statusline+=%{LinterStatus()}
 set statusline+=%y " ファイルタイプ
 set statusline+=[ENC=%{&fileencoding}] " file encoding
 set statusline+=[LOW=%l/%L] " 現在行数/全行数
