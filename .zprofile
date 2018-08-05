@@ -5,9 +5,10 @@ export PATH=/usr/local/sbin:$PATH
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+### virtualenv has replaced by pipenv (maybe)
 # pyenv virtualenv
-export PYTHONPATH="/Users/55p/.anyenv/envs/pyenv/shims:$PYTHONPATH"
-eval "$(pyenv virtualenv-init -)"
+# export PYTHONPATH="/Users/55p/.anyenv/envs/pyenv/shims:$PYTHONPATH"
+# eval "$(pyenv virtualenv-init -)"
 
 # bundler
 export PATH=./vendor/bin:$PATH
