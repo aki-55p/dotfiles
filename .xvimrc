@@ -39,8 +39,9 @@ set clipboard+=autoselect
 nnoremap vv vawy
 
 " 挿入モードでカーソル形状を変更する
-let &t_SI.="\e[6 q"
-let &t_EI.="\e[2 q"
+let &t_SI .= "\e[6 q"
+let &t_EI .= "\e[2 q"
+let &t_SR .= "\e[4 q"
 
 " カーソル形状がすぐに元に戻らないのでタイムアウト時間を調整
 set ttimeoutlen=10

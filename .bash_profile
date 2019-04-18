@@ -20,3 +20,7 @@ export PATH=./vendor/bin:$PATH
 # fi
 
 alias ls='ls -G'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/55p/.sdkman"
+[[ -s "/Users/55p/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/55p/.sdkman/bin/sdkman-init.sh"

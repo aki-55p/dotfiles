@@ -55,6 +55,10 @@ SPROMPT="%r is correct? [n,y,a,e]: "
 #############################
 # エイリアス
 #############################
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
 alias la='ls -a'
 alias ll='ls -l'
 alias ls='ls -G'
@@ -300,3 +304,7 @@ function _update_vcs_info_msg() {
 }
 add-zsh-hook precmd _update_vcs_info_msg
 typeset -U path PATH
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/55p/.sdkman"
+[[ -s "/Users/55p/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/55p/.sdkman/bin/sdkman-init.sh"

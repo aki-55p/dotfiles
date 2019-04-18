@@ -4,6 +4,8 @@ set shortmess+=I "起動メッセージ非表示
 "#######################
 " 表示系
 "#######################
+set langmenu=en_US
+let $LANG = 'en_US'
 set number "行番号表示
 set showmode "モード表示
 set title "編集中のファイル名を表示
@@ -69,7 +71,7 @@ set laststatus=2 " ステータスラインを常に表示(0:表示しない、1
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok'] " ALE のエラー表示フォーマット
 
 "#######################
-" プログラミングヘルプ系
+" programming helper
 "#######################
 syntax on "カラー表示
 
@@ -91,7 +93,7 @@ inoremap ' ''<Left>
 inoremap " ""<Left>
 
 "#######################
-" 検索系
+" search
 "#######################
 set ignorecase "検索文字列が小文字の場合は大文字小文字を区別なく検索する
 set smartcase "検索文字列に大文字が含まれている場合は区別して検索する
@@ -101,7 +103,7 @@ set nohlsearch "検索結果文字列の非ハイライト表示
 
 
 "#######################
-" 文字コード 
+" character code
 "#######################
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
@@ -110,7 +112,7 @@ set fileformats=unix,dos,mac
 
 
 "######################
-" 操作系
+" operation
 "######################
 "カーソルを行頭，行末で止まらないようにする
 set whichwrap=b,s,h,l,<,>,[,]
@@ -274,7 +276,10 @@ call dein#add('wakatime/vim-wakatime')
 " PostCSS
 call dein#add('stephenway/postcss.vim')
 
-" syntastic
+" xcode
+call dein#add('gfontenot/vim-xcode')
+
+" syntax
 call dein#add('w0rp/ale')
 
 " syntax
@@ -291,6 +296,8 @@ call dein#add('tikhomirov/vim-glsl')
 call dein#add('wavded/vim-stylus')
 call dein#add('mxw/vim-jsx')
 call dein#add('posva/vim-vue')
+call dein#add('justmao945/vim-clang')
+call dein#add('bfrg/vim-cpp-modern')
 
 call dein#end()
 
