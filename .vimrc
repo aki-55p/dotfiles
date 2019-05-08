@@ -55,6 +55,20 @@ function! LinterStatus() abort
 endfunction
 
 "#######################
+" ale settings
+"#######################
+let g:ale_linters = {
+    \ 'python': ['flake8'],
+    \ }
+
+let g:ale_fixers = {
+    \ 'python': ['autopep8', 'black', 'isort'],
+    \ 'javascript': ['prettier'],
+    \ }
+
+let g:ale_fix_on_save = 1
+
+"#######################
 " status line
 "#######################
 set statusline=%F  " ファイル名表示

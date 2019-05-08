@@ -1,6 +1,10 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
+# for pipenv error
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
