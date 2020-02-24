@@ -68,6 +68,9 @@ let g:ale_fixers = {
 
 let g:ale_fix_on_save = 1
 
+let g:flake8_ignore = 'E501' " ignore E501 for flake8
+let g:ale_python_flake8_options = '--ignore=E501'
+
 "#######################
 " status line
 "#######################
@@ -312,6 +315,7 @@ call dein#add('mxw/vim-jsx')
 call dein#add('posva/vim-vue')
 call dein#add('justmao945/vim-clang')
 call dein#add('bfrg/vim-cpp-modern')
+call dein#add('aklt/plantuml-syntax')
 
 call dein#end()
 
