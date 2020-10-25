@@ -306,6 +306,7 @@ call dein#add('digitaltoad/vim-jade')
 call dein#add('jelera/vim-javascript-syntax')
 call dein#add('kchmck/vim-coffee-script')
 call dein#add('leafgarland/typescript-vim')
+call dein#add('peitalin/vim-jsx-typescript')
 call dein#add('sudar/vim-arduino-syntax')
 call dein#add('sophacles/vim-processing')
 call dein#add('toyamarinyon/vim-swift')
@@ -433,4 +434,4 @@ au BufNewFile,BufRead *.as setf actionscript
 "
 " typescript
 autocmd BufNewFile,BufRead *.ts     set filetype=typescript
-autocmd BufNewFile,BufRead *.tsx    set filetype=typescript
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
