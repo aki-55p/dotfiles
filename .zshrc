@@ -308,3 +308,9 @@ typeset -U path PATH
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/55p/.sdkman"
 [[ -s "/Users/55p/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/55p/.sdkman/bin/sdkman-init.sh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/55p/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/55p/tools/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/55p/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/55p/tools/google-cloud-sdk/completion.zsh.inc'; fi

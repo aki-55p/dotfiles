@@ -12,6 +12,9 @@ export PIPENV_VENV_IN_PROJECT=true
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # go
 export PATH="$GOPATH/bin:$PATH"
 
