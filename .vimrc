@@ -67,11 +67,11 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
     \ 'python': ['autopep8', 'black', 'isort'],
-    \ 'javascript': ['prettier'],
-    \ 'typescript': ['prettier'],
-    \ 'css': ['prettier'],
-    \ 'scss': ['prettier'],
-    \ 'sass': ['prettier'],
+    \ 'javascript': ['prettier', 'eslint'],
+    \ 'typescript': ['prettier','eslint'],
+    \ 'css': ['prettier', 'stylelint'],
+    \ 'scss': ['prettier', 'stylelint'],
+    \ 'sass': ['prettier', 'stylelint'],
     \ 'yaml': ['prettier'],
     \ }
 
