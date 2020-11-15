@@ -59,12 +59,20 @@ endfunction
 "#######################
 let g:ale_linters = {
     \ 'python': ['flake8'],
+    \ 'css': ['stylelint'],
+    \ 'scss': ['stylelint'],
+    \ 'sass': ['stylelint'],
+    \ 'yaml': ['yamllint'],
     \ }
 
 let g:ale_fixers = {
     \ 'python': ['autopep8', 'black', 'isort'],
     \ 'javascript': ['prettier'],
     \ 'typescript': ['prettier'],
+    \ 'css': ['prettier'],
+    \ 'scss': ['prettier'],
+    \ 'sass': ['prettier'],
+    \ 'yaml': ['prettier'],
     \ }
 
 let g:ale_fix_on_save = 1
@@ -421,6 +429,7 @@ endif
 "######################
 "Processing syntax用
 au BufNewFile,BufRead *.pde setf processing
+
 "arduino syntax用
 au BufNewFile,BufRead *.ino setf arduino
 
@@ -431,7 +440,15 @@ autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
 
 " action script syntax highlight
 au BufNewFile,BufRead *.as setf actionscript
-"
+
 " typescript
 autocmd BufNewFile,BufRead *.ts     set filetype=typescript
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+
+" yaml
+au BufNewFile,BufRead *.yaml,*.yml set filetype=yaml
+
+" css
+au BufNewFile,BufRead *.css set filetype=css
+au BufNewFile,BufRead *.scss set filetype=scss
+au BufNewFile,BufRead *.sass set filetype=sass
